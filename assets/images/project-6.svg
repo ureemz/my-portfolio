@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="رسم توضيحي لدليل استجابة للحوادث">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1828"/><stop offset="1" stop-color="#050a12"/></linearGradient>
+    <pattern id="grid6" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#3ddcc0" stroke-opacity=".07"/></pattern>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg6)"/>
+  <rect width="1200" height="750" fill="url(#grid6)"/>
+  <rect x="330" y="120" width="540" height="530" rx="24" fill="#f7fbfc" opacity=".95"/>
+  <rect x="365" y="160" width="200" height="18" rx="9" fill="#3ddcc0"/>
+  <g stroke="#cbd8e0" stroke-width="9" stroke-linecap="round"><path d="M365 220h400M365 250h320"/></g>
+  <g stroke="#3ddcc0" stroke-width="4" stroke-linecap="round"><path d="M365 320h470M365 370h470M365 420h470M365 470h380M365 520h430"/></g>
+  <g fill="#3ddcc0"><circle cx="365" cy="320" r="12"/><circle cx="365" cy="370" r="12"/><circle cx="365" cy="420" r="12"/><circle cx="365" cy="470" r="12"/><circle cx="365" cy="520" r="12"/></g>
+  <path d="M180 300v180M1020 300v180" stroke="#3ddcc0" stroke-opacity=".35" stroke-width="3"/>
+  <text x="80" y="105" font-family="Arial,sans-serif" font-size="26" font-weight="bold" letter-spacing="5" fill="#3ddcc0">INCIDENT RESPONSE</text>
+  <text x="80" y="690" font-family="Arial,sans-serif" font-size="18" letter-spacing="3" fill="#90a4b8">PLAYBOOK / REPORT TEMPLATE</text>
+</svg>

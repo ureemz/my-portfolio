@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <!-- ============ بيانات أساسية وSEO ============ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ريم الناخبي | متخصصة في الأمن السيبراني — معرض أعمال</title>
+  <meta name="description" content="معرض أعمال ريم محمد عبدالله الناخبي، متخصصة في الأمن السيبراني من جدة: مشاريع في أمن الشبكات وتحليل الثغرات والأمن الدفاعي، شهادات، وسيرة ذاتية.">
+  <meta name="author" content="ريم محمد عبدالله الناخبي">
+  <meta name="keywords" content="الأمن السيبراني, أمن الشبكات, تحليل الثغرات, معرض أعمال, ريم الناخبي, جدة">
+  <meta name="theme-color" content="#070b14">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / مشاركة المواقع -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ريم الناخبي | متخصصة في الأمن السيبراني">
+  <meta property="og:description" content="معرض أعمال ومشاريع في أمن الشبكات وتحليل الثغرات والأمن الدفاعي — جدة، المملكة العربية السعودية.">
+  <meta property="og:image" content="assets/images/profile.svg">
+  <meta property="og:locale" content="ar_SA">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- أيقونة الموقع والخطوط -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- تثبيت الوضع المفضّل قبل ظهور الصفحة لتجنّب وميض الألوان -->
+  <script>
+    (function () {
+      try {
+        document.documentElement.dataset.theme = localStorage.getItem('reem-theme') === 'light' ? 'light' : 'dark';
+      } catch (e) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    })();
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- رابط تخطي للوحة المفاتيح -->
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى الرئيسي</a>
+
+  <!-- مؤشر تقدّم القراءة -->
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+
+  <!-- ============ مكتبة أيقونات SVG داخلية (بدون مكتبات خارجية) ============ -->
+  <svg class="svg-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><path d="M12 15v2"/></symbol>
+    <symbol id="i-network" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="5" rx="1.5"/><rect x="2" y="17" width="6" height="5" rx="1.5"/><rect x="16" y="17" width="6" height="5" rx="1.5"/><path d="M12 7v5M5 17v-3h14v3"/></symbol>
+    <symbol id="i-bug" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="13" rx="5"/><path d="M9 7V5a3 3 0 0 1 6 0v2M4 11h3M17 11h3M4 16h3M17 16h3M12 11v5"/></symbol>
+    <symbol id="i-radar" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/><path d="M12 12 19 6"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M13 15h4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></symbol>
+    <symbol id="i-graduation" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 10v6"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M4 21h16"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6ZM6 9H2v12h4V9ZM4 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+  </svg>
+
+  <!-- ============ 1) شريط التنقل الثابت ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="ريم الناخبي CYBER SECURITY - الصفحة الرئيسية">
+        <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-shield"></use></svg></span>
+        <span class="brand-text">
+          <strong>ريم الناخبي</strong>
+          <small>CYBER SECURITY</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="التنقل الرئيسي">
+        <a href="#home" class="nav-link is-active">الرئيسية</a>
+        <a href="#about" class="nav-link">نبذة عني</a>
+        <a href="#skills" class="nav-link">المهارات</a>
+        <a href="#projects" class="nav-link">الأعمال</a>
+        <a href="#certificates" class="nav-link">الشهادات</a>
+        <a href="#cv" class="nav-link">السيرة الذاتية</a>
+        <a href="#education" class="nav-link">التعليم</a>
+        <a href="#contact" class="nav-link">تواصل معي</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="التبديل إلى الوضع الفاتح" aria-pressed="false">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sun"></use></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-moon"></use></svg>
+        </button>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mainNav">
+          <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-menu"></use></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ 2) الواجهة الرئيسية ============ -->
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="hero-glow glow-a"></span>
+        <span class="hero-glow glow-b"></span>
+        <span class="hero-grid"></span>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="eyebrow-line"></span> جدة، المملكة العربية السعودية <span class="dot-separator">•</span> متخصصة في الأمن السيبراني</p>
+          <h1 id="heroTitle" class="reveal">ريم محمد عبدالله <span class="gradient-text">الناخبي</span></h1>
+          <p class="hero-role reveal"><span class="role-bracket">[</span> متخصصة في الأمن السيبراني <span class="role-bracket">]</span></p>
+          <p class="hero-lead reveal">أحوّل التهديدات إلى نقاط قوة؛ أصمّم دفاعات ذكية، أحلّل الثغرات قبل أن يستغلها غيري، وأبني أنظمة تستطيع الصمود في عالم رقمي لا يتوقف عن التغيّر.</p>
+
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#projects">شاهد أعمالي <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <a class="btn btn-ghost" href="#contact"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mail"></use></svg> تواصل معي</a>
+            <a class="btn btn-quiet" href="assets/files/reem-cv.pdf" download="Reem-AlNakhebi-CV.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-download"></use></svg> تحميل السيرة الذاتية</a>
+          </div>
+
+          <ul class="hero-chips reveal" aria-label="مجالات الخبرة">
+            <li>أمن الشبكات</li>
+            <li>تحليل الثغرات</li>
+            <li>الأمن الدفاعي</li>
+          </ul>
+        </div>
+
+        <!-- بطاقة هوية بصرية مبتكرة، عناصرها زخرفية بالكامل -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <span class="orbit orbit-one"></span>
+          <span class="orbit orbit-two"></span>
+          <span class="float-chip chip-one">SSH / TLS 1.3</span>
+          <span class="float-chip chip-two">CVE-2026</span>
+          <span class="float-chip chip-three">ZERO TRUST</span>
+
+          <div class="identity-card">
+            <div class="identity-top">
+              <span class="status-dot"></span>
+              <span>SECURE PROFILE</span>
+              <span class="identity-id">ID: RP-2026</span>
+            </div>
+            <div class="identity-emblem">
+              <svg viewBox="0 0 24 24"><use href="#i-shield"></use></svg>
+              <span class="emblem-ring"></span>
+            </div>
+            <p class="identity-name">ريم الناخبي</p>
+            <p class="identity-role">Cybersecurity Specialist</p>
+            <div class="identity-divider"></div>
+            <ul class="identity-list">
+              <li><svg viewBox="0 0 24 24"><use href="#i-check"></use></svg> Network Defense</li>
+              <li><svg viewBox="0 0 24 24"><use href="#i-check"></use></svg> Vulnerability Analysis</li>
+              <li><svg viewBox="0 0 24 24"><use href="#i-check"></use></svg> Incident Response</li>
+            </ul>
+            <div class="identity-status"><span class="pulse-dot"></span> SYSTEM STATUS: PROTECTED</div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="الانتقال إلى القسم التالي"><span></span></a>
+    </section>
+
+    <!-- ============ 3) نبذة عني ============ -->
+    <section class="section about" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index" aria-hidden="true">01 / ABOUT</span>
+          <h2 id="aboutTitle">نبذة عني</h2>
+          <p class="section-subtitle">فضوليّة بالطبيعة، دقيقة بالتفاصيل، ومؤمنة بأن الأمن مسؤولية قبل أن يكون مهارة.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>أنا طالبة ومتخصصة في الأمن السيبراني من جدة، أدرس كيف تعمل الأنظمة من الداخل لأستطيع حمايتها من الخارج. يجمع بيني وبين هذا المجال حبّ التحليل، ومتابعة التهديدات المستجدة، والرغبة في تحويل المعرفة النظرية إلى حلول عملية يمكن قياس أثرها.</p>
+            <p>خلال مسيرتي الأكاديمية، عملت على مشاريع في مسح الشبكات، تحليل الثغرات، بناء لوحات مراقبة أمنية، وصياغة خطط استجابة للحوادث. أفضّل العمل المنهجي الموثّق، وأحرص على أن يكون كل مشروع قابلًا للشرح والمراجعة.</p>
+            <p class="editable-note"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-info"></use></svg> هذه نصوص تجريبية مهذبة؛ عدّليها لتعكس خبرتك بدقة.</p>
+          </div>
+
+          <div class="stats-grid reveal" aria-label="أرقام سريعة">
+            <div class="stat-card">
+              <span class="stat-number" data-count="6">0</span>
+              <span class="stat-label">مشاريع منفّذة</span>
+              <span class="stat-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-terminal"></use></svg></span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="5">0</span>
+              <span class="stat-label">شهادات ودورات</span>
+              <span class="stat-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-award"></use></svg></span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="12">0</span>
+              <span class="stat-label">مهارة متقنة</span>
+              <span class="stat-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-shield"></use></svg></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4) المهارات ============ -->
+    <section class="section skills" id="skills" aria-labelledby="skillsTitle">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index" aria-hidden="true">02 / SKILLS</span>
+          <h2 id="skillsTitle">مجالات مهاراتي</h2>
+          <p class="section-subtitle">خمس زوايا متكاملة تغطّي الطريق من اكتشاف الثغرة حتى احتواء الحادث.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-network"></use></svg></div>
+            <h3>أمن الشبكات</h3>
+            <p>تصميم الشبكات وتقسيمها، إدارة VLAN والجدران النارية، ومراقبة حركة البيانات للكشف عن anomalies.</p>
+            <ul class="tag-list"><li>TCP/IP</li><li>VLAN</li><li>Firewall</li><li>Wireshark</li></ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bug"></use></svg></div>
+            <h3>تحليل الثغرات</h3>
+            <p>مسح الأنظمة وتصنيف الثغرات وفق CVSS، كتابة تقارير قابلة للتنفيذ، والتحقق من الإصلاحات.</p>
+            <ul class="tag-list"><li>Nmap</li><li>Nessus</li><li>OWASP</li><li>CVSS</li></ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-radar"></use></svg></div>
+            <h3>الأمن الدفاعي</h3>
+            <p>بناء قواعد كشف التسلل، تحليل السجلات، وصياغة سيناريوهات استجابة للحوادث وفق أطر عمل معتمدة.</p>
+            <ul class="tag-list"><li>SIEM</li><li>Snort</li><li>MITRE ATT&amp;CK</li><li>Logs</li></ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-terminal"></use></svg></div>
+            <h3>أدوات وأنظمة</h3>
+            <p>العمل مع لينكس وGit وأدوات الأتمتة، وتشغيل بيئات اختبار معزولة بأمان تام.</p>
+            <ul class="tag-list"><li>Linux</li><li>Python</li><li>Git</li><li>Docker</li><li>VM</li></ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-user"></use></svg></div>
+            <h3>مهارات شخصية</h3>
+            <p>التفكير النقدي، الدقة في التوثيق، العمل الجماعي، والقدرة على شرح النتائج التقنية لغير المختصين.</p>
+            <ul class="tag-list"><li>التحليل</li><li>التوثيق</li><li>التعاون</li><li>إدارة الوقت</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5) الأعمال والمشاريع ============ -->
+    <section class="section projects" id="projects" aria-labelledby="projectsTitle">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index" aria-hidden="true">03 / WORK</span>
+          <h2 id="projectsTitle">الأعمال والمشاريع</h2>
+          <p class="section-subtitle">نماذج تجريبية تُبنى تلقائياً من مصفوفة واحدة في <code>script.js</code>؛ انقر على أي بطاقة لعرض التفاصيل.</p>
+        </div>
+
+        <div class="filter-bar reveal" id="filterBar" role="group" aria-label="تصفية المشاريع حسب النوع"></div>
+        <div class="projects-grid" id="projectsGrid"></div>
+        <p class="projects-empty" id="projectsEmpty" hidden>لا توجد مشاريع في هذا التصنيف حالياً.</p>
+      </div>
+    </section>
+
+    <!-- ============ 6) الشهادات والدورات ============ -->
+    <section class="section certificates" id="certificates" aria-labelledby="certificatesTitle">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index" aria-hidden="true">04 / CERTS</span>
+          <h2 id="certificatesTitle">الشهادات والدورات</h2>
+          <p class="section-subtitle">محطات تعلّم متواصلة — عدّلي العناوين والتواريخ لتطابق شهاداتك الفعلية.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-dot"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-award"></use></svg></span>
+            <div class="timeline-card">
+              <span class="timeline-year">2026</span>
+              <h3>شهادة الأمن السيبراني الاحترافية</h3>
+              <p class="timeline-org">Google Cybersecurity Certificate — نموذج قابل للتعديل</p>
+              <p>أساسيات الأمن، تحليل المخاطر، استخدام أدوات SIEM، والاستجابة للحوادث.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-dot"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-shield"></use></svg></span>
+            <div class="timeline-card">
+              <span class="timeline-year">2025</span>
+              <h3>CompTIA Security+ — قيد التحضير</h3>
+              <p class="timeline-org">مرحلة التحضير والمذاكرة</p>
+              <p>التهديدات، الضوابط الأمنية، الهوية والوصول، وأساسيات التشفير.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-dot"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-terminal"></use></svg></span>
+            <div class="timeline-card">
+              <span class="timeline-year">2025</span>
+              <h3>دورة أساسيات اختبار الاختراق الأخلاقي</h3>
+              <p class="timeline-org">منصة تعليمية إلكترونية — نموذج قابل للتعديل</p>
+              <p>مسح الشبكات، تحليل الثغرات، وكتابة تقارير الاختبار بشكل مسؤول.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-dot"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-network"></use></svg></span>
+            <div class="timeline-card">
+              <span class="timeline-year">2024</span>
+              <h3>ورشة أمن الشبكات العملية</h3>
+              <p class="timeline-org">نادي الأمن السيبراني — نموذج قابل للتعديل</p>
+              <p>تطبيق عملي على تصميم الشبكات الآمنة ومراقبة الحركة باستخدام أدوات مفتوحة المصدر.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 7) السيرة الذاتية ============ -->
+    <section class="section cv-section" id="cv" aria-labelledby="cvTitle">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index" aria-hidden="true">05 / CV</span>
+          <h2 id="cvTitle">السيرة الذاتية</h2>
+          <p class="section-subtitle">نسخة مختصرة من مسيرتي الأكاديمية والمهارات، جاهزة للتحميل بصيغة PDF.</p>
+        </div>
+
+        <div class="cv-grid">
+          <div class="cv-info reveal">
+            <span class="cv-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-file"></use></svg> PDF</span>
+            <h3>ريم محمد عبدالله الناخبي</h3>
+            <p>متخصصة في الأمن السيبراني — جدة، المملكة العربية السعودية</p>
+            <ul class="cv-points">
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"></use></svg> مشاريع عملية في أمن الشبكات وتحليل الثغرات</li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"></use></svg> شهادات ودورات في الأمن السيبراني</li>
+              <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"></use></svg> إتقان أدوات التحليل والمراقبة والأنظمة</li>
+            </ul>
+            <div class="cv-actions">
+              <a class="btn btn-primary" href="assets/files/reem-cv.pdf" download="Reem-AlNakhebi-CV.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-download"></use></svg> تحميل PDF</a>
+              <a class="btn btn-ghost" href="assets/files/reem-cv.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-external"></use></svg> فتح المعاينة</a>
+            </div>
+            <p class="editable-note"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-info"></use></svg> ضعي ملفك باسم <code>reem-cv.pdf</code> داخل <code>assets/files/</code> ليظهر بدلاً من المعاينة التجريبية.</p>
+          </div>
+
+          <!-- المعاينة تعمل تلقائياً عند وجود ملف PDF، وتعرض بديلاً أنيقاً قبل إضافته -->
+          <div class="cv-preview-wrap reveal">
+            <object class="cv-preview" data="assets/files/reem-cv.pdf" type="application/pdf" aria-label="معاينة السيرة الذاتية">
+              <div class="cv-fallback">
+                <div class="cv-paper" aria-hidden="true">
+                  <div class="paper-head"><span class="paper-avatar"></span><span class="paper-lines"><i></i><i></i></span></div>
+                  <span class="paper-line long"></span><span class="paper-line mid"></span>
+                  <span class="paper-title"></span>
+                  <span class="paper-line long"></span><span class="paper-line mid"></span><span class="paper-line short"></span>
+                  <span class="paper-title small"></span>
+                  <span class="paper-line long"></span><span class="paper-line mid"></span><span class="paper-line long"></span>
+                </div>
+                <p>معاينة تجريبية للسيرة الذاتية</p>
+              </div>
+            </object>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8) التعليم ============ -->
+    <section class="section education" id="education" aria-labelledby="educationTitle">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index" aria-hidden="true">06 / EDU</span>
+          <h2 id="educationTitle">التعليم</h2>
+          <p class="section-subtitle">التعلّم المستمر هو أداتي الأهم في ميدان يتغيّر كل يوم.</p>
+        </div>
+
+        <div class="education-grid">
+          <article class="edu-card reveal">
+            <div class="edu-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-graduation"></use></svg></div>
+            <div>
+              <span class="edu-date">2024 — حتى الآن</span>
+              <h3>بكالوريوس الأمن السيبراني</h3>
+              <p class="edu-place">اسم الجامعة — عدّلي هذا النص</p>
+              <p>مسار أكاديمي يركّز على أمن الشبكات، الأنظمة، التشفير، وإدارة المخاطر، مع مشاريع تطبيقية داخل المختبر.</p>
+            </div>
+          </article>
+          <article class="edu-card reveal">
+            <div class="edu-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-lock"></use></svg></div>
+            <div>
+              <span class="edu-date">2024</span>
+              <h3>المرحلة الأساسية في علوم الحاسب</h3>
+              <p class="edu-place">أساسيات البرمجة وأنظمة التشغيل</p>
+              <p>بناء قاعدة تقنية في الخوارزميات، قواعد البيانات، وشبكات الحاسوب تمهيداً للتخصص في الأمن.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9) تواصل معي ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index" aria-hidden="true">07 / CONTACT</span>
+          <h2 id="contactTitle">لنتواصل</h2>
+          <p class="section-subtitle">لديك فكرة مشروع، سؤال، أو فرصة تعاون؟ اتركي رسالة وسأردّ في أقرب وقت.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-details reveal">
+            <h3>معلومات التواصل</h3>
+            <p class="contact-intro">أفضّل الرسائل الواضحة والمحددة؛ أكتب لك رداً مفصّلاً خلال يومين عمل كحد أقصى.</p>
+
+            <a class="contact-item" href="mailto:reeeme19978@gmail.com">
+              <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mail"></use></svg></span>
+              <span><small>البريد الإلكتروني</small><strong>reeeme19978@gmail.com</strong></span>
+            </a>
+            <div class="contact-item">
+              <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-shield"></use></svg></span>
+              <span><small>الموقع</small><strong>جدة، المملكة العربية السعودية</strong></span>
+            </div>
+
+            <div class="email-copy">
+              <button class="copy-btn" id="copyEmail" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-copy"></use></svg> نسخ البريد الإلكتروني</button>
+            </div>
+
+            <div class="social-links">
+              <a class="social-btn" data-placeholder="linkedin" href="#" aria-label="رابط LinkedIn — أضيفي رابطك في script.js"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-linkedin"></use></svg> LinkedIn</a>
+              <a class="social-btn" data-placeholder="github" href="#" aria-label="رابط GitHub — أضيفي رابطك في script.js"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-github"></use></svg> GitHub</a>
+            </div>
+            <p class="editable-note"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-info"></use></svg> زرا LinkedIn وGitHub عناصر نائبة؛ أضيفي روابطك من <code>SITE_CONFIG</code> في <code>script.js</code>.</p>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="fullName">الاسم الكامل <span aria-hidden="true">*</span></label>
+                <input type="text" id="fullName" name="name" placeholder="اسمك الكامل" autocomplete="name" required aria-describedby="nameError">
+                <small class="field-error" id="nameError"></small>
+              </div>
+              <div class="field">
+                <label for="email">البريد الإلكتروني <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" required aria-describedby="emailError">
+                <small class="field-error" id="emailError"></small>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="subject">الموضوع</label>
+              <input type="text" id="subject" name="subject" placeholder="موضوع الرسالة (اختياري)">
+            </div>
+
+            <div class="field">
+              <label for="message">الرسالة <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="6" placeholder="اكتبي رسالتك هنا..." required aria-describedby="messageError"></textarea>
+              <small class="field-error" id="messageError"></small>
+            </div>
+
+            <button class="btn btn-primary submit-btn" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mail"></use></svg> إرسال الرسالة</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 10) التذييل ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-shield"></use></svg></span>
+        <div>
+          <strong>ريم الناخبي</strong>
+          <p>متخصصة في الأمن السيبراني — جدة، السعودية</p>
+        </div>
+      </div>
+      <nav class="footer-links" aria-label="روابط التذييل">
+        <a href="#about">عنّي</a>
+        <a href="#skills">المهارات</a>
+        <a href="#projects">الأعمال</a>
+        <a href="#certificates">الشهادات</a>
+        <a href="#contact">تواصل معي</a>
+      </nav>
+      <p class="footer-copy">© <span id="currentYear">2026</span> ريم محمد عبدالله الناخبي. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <!-- زر العودة للأعلى -->
+  <button class="to-top" id="toTop" type="button" aria-label="العودة إلى أعلى الصفحة"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-up"></use></svg></button>
+
+  <!-- نافذة تفاصيل المشروع -->
+  <dialog class="project-dialog" id="projectDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-inner">
+      <button class="dialog-close" id="dialogClose" type="button" aria-label="إغلاق نافذة التفاصيل"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-close"></use></svg></button>
+      <div class="dialog-media"><img id="dialogImage" alt="" loading="lazy"></div>
+      <div class="dialog-content">
+        <span class="dialog-type" id="dialogType"></span>
+        <h3 id="dialogTitle"></h3>
+        <p class="dialog-description" id="dialogDescription"></p>
+        <ul class="dialog-highlights" id="dialogHighlights"></ul>
+        <div class="dialog-tags" id="dialogTags"></div>
+        <div class="dialog-meta" id="dialogMeta"></div>
+        <div class="dialog-actions" id="dialogActions"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- إشعار صغير للنسخ وغيره -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

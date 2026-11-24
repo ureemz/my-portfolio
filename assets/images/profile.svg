@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="صورة شخصية تجريبية قابلة للاستبدال">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1a2b"/><stop offset="1" stop-color="#05090f"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3ddcc0"/><stop offset="1" stop-color="#0e8f7a"/></linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#3ddcc0" stroke-opacity=".08"/></pattern>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <rect width="800" height="1000" fill="url(#grid)"/>
+  <circle cx="400" cy="420" r="270" fill="none" stroke="#3ddcc0" stroke-opacity=".25"/>
+  <circle cx="400" cy="420" r="210" fill="none" stroke="#3ddcc0" stroke-opacity=".12" stroke-dasharray="8 12"/>
+  <circle cx="400" cy="370" r="92" fill="url(#accent)" opacity=".9"/>
+  <path d="M220 720c0-115 80-185 180-185s180 70 180 185" fill="url(#accent)" opacity=".9"/>
+  <path d="M400 92c70 40 120 42 120 42v104c0 92-50 148-120 180-70-32-120-88-120-180V134s50-2 120-42Z" fill="none" stroke="#3ddcc0" stroke-width="4" stroke-opacity=".9"/>
+  <path d="m350 270 35 35 70-72" fill="none" stroke="#eaf1f8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="400" y="850" text-anchor="middle" font-family="Arial,sans-serif" font-size="46" font-weight="bold" fill="#eaf1f8">REEM AL-NAKHEBI</text>
+  <text x="400" y="905" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" letter-spacing="6" fill="#3ddcc0">CYBER SECURITY</text>
+</svg>

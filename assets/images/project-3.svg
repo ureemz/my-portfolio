@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="رسم توضيحي لشبكة مقسمة">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1828"/><stop offset="1" stop-color="#050a12"/></linearGradient>
+    <pattern id="grid3" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#3ddcc0" stroke-opacity=".07"/></pattern>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+  <rect width="1200" height="750" fill="url(#grid3)"/>
+  <g stroke="#3ddcc0" stroke-opacity=".45" stroke-width="3" fill="none"><path d="M600 180v110M600 290H290v100M600 290h310v100M290 390v100M910 390v100"/></g>
+  <rect x="490" y="100" width="220" height="80" rx="16" fill="#123047" stroke="#3ddcc0" stroke-opacity=".6"/>
+  <text x="600" y="150" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#eaf1f8">GATEWAY</text>
+  <g>
+    <rect x="170" y="390" width="240" height="130" rx="16" fill="#3ddcc0" fill-opacity=".08" stroke="#3ddcc0" stroke-opacity=".5"/>
+    <rect x="490" y="390" width="240" height="130" rx="16" fill="#3ddcc0" fill-opacity=".08" stroke="#3ddcc0" stroke-opacity=".5"/>
+    <rect x="790" y="390" width="240" height="130" rx="16" fill="#3ddcc0" fill-opacity=".08" stroke="#3ddcc0" stroke-opacity=".5"/>
+    <text x="290" y="465" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#eaf1f8">ADMIN</text>
+    <text x="610" y="465" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#eaf1f8">LAB</text>
+    <text x="910" y="465" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#eaf1f8">GUEST</text>
+  </g>
+  <g fill="#3ddcc0" opacity=".85"><circle cx="290" cy="570" r="9"/><circle cx="610" cy="570" r="9"/><circle cx="910" cy="570" r="9"/></g>
+  <text x="80" y="690" font-family="Arial,sans-serif" font-size="18" letter-spacing="3" fill="#90a4b8">VLAN SEGMENTATION / FIREWALL POLICY</text>
+  <text x="80" y="115" font-family="Arial,sans-serif" font-size="26" font-weight="bold" letter-spacing="5" fill="#3ddcc0">SECURE NETWORK</text>
+</svg>
